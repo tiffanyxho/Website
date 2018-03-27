@@ -1,0 +1,277 @@
+<!-- fonts.google.com = fonts; htmlcolorcodes.com = colors -->
+<!-- https://imgbb.com/ = use to upload images -->
+
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<!-- importing a font - import in head & import in html code (outside of style tag); google.fonts.com -> click plus sign of font you want to add -> click on family selected -> copy & paste code under embed font, starting with link (see below) -> code under specify in css is the exact code needed to change the font in css code under style tag -->
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Handlee" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+		<title> Tiffany Ho's Portfolio </title>
+	</head>
+
+    <style>
+    	body {
+				font-family: 'Handlee', cursive;
+        background-color: #ccddff;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      div.profile-picture {
+        float: right;
+				overflow: auto;
+				margin: 0 5 5px 21px
+      }
+
+      h2 {
+      	text-align: center;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			#about_me_text {
+				text-align: left;
+			}
+
+      .change_size {
+        font-size: 30px;
+      }
+
+			div.projects {
+				text-indent: 20px;
+				list-style-position: inside;
+			}
+
+			hr {
+				width: 100%;
+			}
+
+			div.containers {
+			}
+
+			button {
+        background-color: #ccccff; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    	}
+
+			.button {
+			  display: inline-block;
+			  padding: 15px 25px;
+			  font-size: 24px;
+			  cursor: pointer;
+			  text-align: center;
+			  text-decoration: none;
+			  outline: none;
+			  color: #fff;
+			  background-color: #4CAF50;
+			  border: none;
+			  border-radius: 15px;
+			  box-shadow: 0 9px #a6a6a6;
+				margin-left: 90px;
+				margin-right: 90px;
+
+			}
+
+			.button:hover {background-color: #3e8e41}
+
+			.button:active {
+			  background-color: #3e8e41;
+			  box-shadow: 0 5px #808080;
+			  transform: translateY(4px);
+			}
+
+			#projs {
+				width: 140px;
+				height: 135px;
+				background: url("https://drive.google.com/uc?id=0B8T3nig9bXC9Q0VDY253bDFNSnM") no-repeat;
+				background-size: 140px 135px;
+				background-color: #99bbff;
+			}
+
+			#me {
+				width: 150px;
+				height: 155px;
+				background: url("https://drive.google.com/uc?id=1GH73QkfW27RH3LJuCicsL9ak5lwuO7ohbg") no-repeat;
+				background-size: 150px 155px;
+			}
+
+			#contact {
+				width: 130px;
+				height: 210px;
+				background: url("https://drive.google.com/uc?id=0B8T3nig9bXC9SWhsOTE4SGQ4c0E");
+				background-size: 130px 210px;
+			}
+
+			#interest {
+				width: 170px;
+				height: 100px;
+				background: url("https://drive.google.com/uc?id=0B8T3nig9bXC9b1J5Vi1aaTFtcUk");
+				background-size: 170px 100px;
+			}
+
+
+    </style>
+
+<body>
+
+<div class = "container">
+
+	<h1> Welcome to Tiffany Ho's Portfolio! </h1>
+  <button id = "me" class = "button" type = "button" class = "btn" onClick=document.getElementById("aboutme_button").scrollIntoView(); >About Me</button>
+  <button id = "projs" class = "button" type = "button" class = "btn btn-default" onClick=document.getElementById("project_button").scrollIntoView(); >Projects</button>
+	<button id = "interest" class = "button" type = "button" class = "btn btn-success" onClick=document.getElementById("interest_button").scrollIntoView();>Interests</button>
+  <button id = "contact" class = "button" type = "button" class = "btn btn-primary" onClick=document.getElementById("contact_button").scrollIntoView(); >Contact</button>
+
+	<br>
+	<br>
+  <hr>
+
+		<div class = "profile-picture">
+			<p title = "Picture of Tiffany"><img src = "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p160x160/13255926_1030934020305946_8678519128410926502_n.jpg?oh=fb4de675dd1e4ebe7cff778bcf0fabe1&oe=59D3A26C" alt = "The image could not be loaded.">
+    </div>
+		<div id = "aboutme_button">
+			<h3 id = "about_me_text"> A Little About Me </h3>
+			<p id = "about_me_text"> Hi, my name is Tiffany Ho!  I attend <a href = http://www.sanmarinohs.org>San Marino High School</a> and am currently a rising senior.  My primary interests are computer science and video games.  I was introduced to the world of coding by a friend and my interest in coding only continued to grow since.  Shortly after, I discovered that my school had a newly founded Girls Who Code club.  I was in the club for two years and heard about a Girls Who Code summer immersion program through the club, so I applied, and here I am now!  I also took an introduction to coding class at my school, as I am an aspiring computer scientist. </p>
+		</div>
+
+    <!-- when the time comes, hopefully I can have an ABOUT ME tab with INTERESTS, BACKGROUND/EXPERIENCE under it-->
+    <!-- tells a little about me in h2 tag and following p tag -->
+
+    <br>
+    <hr>
+
+	<div id = "interest_button">
+    <h2> Interests </h2>
+    <ul>
+        <li> Coding </li>
+        	<ul>
+            	<li> Artificial intelligence </li>
+                <li> Hacking/cybersecurity </li>
+                <li> Game design </li>
+            </ul>
+        <li> Games </li>
+        	<ul>
+            	<li><a href = http://play.na.leagueoflegends.com/en_US> League of Legends </a></li>
+                <li> Hearthstone </li>
+                <li> Overwatch </li>
+            </ul>
+    </ul>
+	</div>
+
+    <br>
+    <hr>
+
+    <h2> I love... </h2>
+    <ul>
+    	<li> Food </li>
+        <li> Coding </li>
+        <li> Games (see more under Interests) </li>
+        <li> Movies </li>
+        	<ul>
+            	<li> Now You See Me </li>
+                <li> Now You See Me 2 </li>
+                <li> Sing </li>
+                <li> Moana </li>
+            </ul>
+        <li> Animations, mangas/manhwas, & light novels </li>
+        	<ul>
+            	<li> Mahouka Koukou No Rettousei </li>
+                <li> Rokka no Yuusha </li>
+                <li> Lookism </li>
+            </ul>
+        <li> <i> Tuesdays With Morrie </i>by Mitch Albom </li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h2> I dislike... </h2>
+    <ul>
+    	<li> Bugs </li>
+        <li> Celery </li>
+        <li> Flakiness </li>
+        <li> Spiders </li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h2> Experience </h2>
+    <ul>
+    	<li> 3 years in Girls Who Code club </li>
+        	<ul>
+            	<li> Javascript </li>
+                <li> Python </li>
+                <li> Hardware </li>
+                <li> Arduino </li>
+            </ul>
+        <li> 1 year introduction to Coding class at San Marino HS </li>
+        	<ul>
+            	<li> Python </li>
+            </ul>
+    </ul>
+
+    <br>
+    <hr>
+		<div id = "project_button">
+	    <h2> Projects </h2>
+	    <p title = "Snake"><img src="https://drive.google.com/uc?id=0B8T3nig9bXC9Y3ZQbWZ0dDBtZzg" border="0" alt = "The image could not be loaded."></a>
+			<div class = "projects">
+				<h3> Completed Projects </h3>
+
+		      <ul>
+		        <li> Draw Something </li>
+		        <ul>
+		            <li> Uses turtle to create a visual. </li>
+		        </ul>
+		        <li> Turtle Racing </li>
+		        <ul>
+		          <li> Using randomly generated numbers, turtles race! </li>
+		        </ul>
+		          <li> Choose Your Own Adventure </li>
+		          <li> Guess the Number </li>
+		          <li> Pong </li>
+		          <li> Density </li>
+		          <li> Bandit Raid </li>
+		          <li><a href = https://scratch.mit.edu/projects/166992960> Snake (picture above) </a></li>
+		      </ul>
+
+		    	<h3> Works in Progress </h3>
+		        <ul>
+		    			<li> My portfolio! (always a work in progress) </li>
+							<li> Virtual Reality Pac-Man </li>
+		    		</ul>
+			</div>
+
+	    </ul>
+		</div>
+
+    <br>
+    <hr>
+
+	<div id = "contact_button">
+    <h2> Contact </h2>
+    <ul>
+    	<li> Email: tiffanyxho@gmail.com </li>
+      <li> LinkedIn: <a href = "https://www.linkedin.com/in/tiffany-h-950898141/">Tiffany Ho</a> </li>
+    </ul>
+	</div>
+
+</div>
+</body>
